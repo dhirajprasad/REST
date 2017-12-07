@@ -3,6 +3,6 @@
 XMLSchema-instance" xsi:schemeLocation="http://java.sun.com/xml/ns/javaee http://
 java.sun.com/xml/ns/javaee/beans_1_0.xsd">
     <interceptors>
-        <class>com.dp.codelab.interceptor.Interceptor</class>
+        <class>com.dp.codelab.interceptor.LoggingInterceptor</class>
     </interceptors>
 </beans>

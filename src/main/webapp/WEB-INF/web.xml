@@ -14,9 +14,13 @@
   <servlet>
       <servlet-name>Jersey REST Service</servlet-name>
       <servlet-class>org.glassfish.jersey.servlet.ServletContainer</servlet-class>
-      <init-param>
+      <!-- <init-param>
           <param-name>jersey.config.server.provider.packages</param-name>
           <param-value>com.dp.codelab.resource,com.dp.codelab.interceptor</param-value>
+      </init-param> -->
+      <init-param>
+      <param-name>javax.ws.rs.Application</param-name>
+            <param-value>com.dp.codelab.resource.CustomApplication</param-value>
       </init-param>
       <load-on-startup>1</load-on-startup>
   </servlet>
