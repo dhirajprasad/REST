@@ -4,7 +4,6 @@ import org.glassfish.jersey.server.ResourceConfig;
 
 import com.dp.codelab.interceptor.AddInterceptor;
 import com.dp.codelab.interceptor.AuthenticationFilter;
-import com.dp.codelab.interceptor.ValidationException;
 
 public class CustomApplication extends ResourceConfig{
 	public CustomApplication()
@@ -14,7 +13,7 @@ public class CustomApplication extends ResourceConfig{
  
         //Register Auth Filter here
         register(AuthenticationFilter.class);
-        register(ValidationException.class);
+   //     register(ValidationException.class);
         register(AddInterceptor.class);
     }
 }
