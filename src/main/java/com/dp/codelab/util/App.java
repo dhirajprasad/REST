@@ -16,8 +16,9 @@ public class App {
 		String s= "D:\\VerifoneSoftware\\apache-tomcat-8.0.33\\webapps\\IDSTest\\";
 		class Student{
 			private int roll;
-			private String namex;
+			private String name;
 			Set<Integer> mob;
+			@SuppressWarnings("unused")
 			public Student(int roll, String name) {
 				super();
 				this.roll = roll;
@@ -26,6 +27,7 @@ public class App {
 			public Set<Integer> getMob() {
 				return mob;
 			}
+			@SuppressWarnings("unused")
 			public void setMob(Set<Integer> mob) {
 				this.mob = mob;
 			}
